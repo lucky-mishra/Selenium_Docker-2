@@ -14,5 +14,5 @@ COPY testng.xml /home/SeleniumFramework/
 
 ADD healthcheck.sh healthcheck.sh
 #Running the suite
-ENTRYPOINT  mvn -f /home/SeleniumFramework/pom.xml clean test
+CMD  mvn -f /home/SeleniumFramework/pom.xml clean test
 #ENTRYPOINT sh healthcheck.sh

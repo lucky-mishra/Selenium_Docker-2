@@ -34,9 +34,9 @@ services:
       - /dev/shm:/dev/shm
     links:
       - hub
-  selenium-framework:
-    image: mayankluckym/sel-3
-    depends_on:
-      -chrome
-    volumes:
-      - /dev/shm:/dev/shm
+  #selenium-framework:
+    #image: mayankluckym/sel-3
+    #depends_on:
+      #-chrome
+    #volumes:
+      #- /dev/shm:/dev/shm

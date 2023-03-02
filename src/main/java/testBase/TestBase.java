@@ -64,7 +64,7 @@ public class TestBase extends ActionEngine {
     public static String result = null;
 
     public static String DEVKEY = "a979258effb5ad0f6508fc7ab6bd3e73";
-    public static String URL = "http://172.25.80.1/testlink/lib/api/xmlrpc/v1/xmlrpc.php";
+    public static String URL = "http://192.168.1.8/testlink/lib/api/xmlrpc/v1/xmlrpc.php";
     public static void reportResult(String TestProject, String TestPlan, String TestcaseID, String Build, String Notes, String Result) throws TestLinkAPIException, testlink.api.java.client.TestLinkAPIException {
         TestLinkAPIClient api = new TestLinkAPIClient(DEVKEY, URL);
         api.reportTestCaseResult(TestProject, TestPlan, TestcaseID, Build, Notes, Result);
